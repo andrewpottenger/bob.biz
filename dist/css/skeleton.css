@@ -44,14 +44,11 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 80%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -118,14 +115,16 @@
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 html {
   font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  text-align: left; }
 
 
 /* Typography
@@ -148,7 +147,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.5rem; }
+  h6 { font-size: 1.6rem; }
 }
 
 p {
@@ -158,9 +157,11 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #000;
+  font-weight: bold;
+  text-decoration:  none; }
 a:hover {
-  color: #0FA0CE; }
+   }
 
 
 /* Buttons
@@ -200,14 +201,16 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
+/* Primary Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #ee2d2b;
+  border-color: #ee2d2b; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -219,9 +222,31 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
-
+  background-color: #D71813;
+  border-color: #D71813; }
+/* Secondary Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary{
+  color: #2a2a2a;
+  background-color: #fff;
+  border-color: #2a2a2a; }
+.button.button-secondary:hover,
+button.button-secondary:hover,
+input[type="submit"].button-secondary:hover,
+input[type="reset"].button-secondary:hover,
+input[type="button"].button-secondary:hover,
+.button.button-secondary:focus,
+button.button-secondary:focus,
+input[type="submit"].button-secondary:focus,
+input[type="reset"].button-secondary:focus,
+input[type="button"].button-secondary:focus {
+  color: #FFF;
+  background-color: #719582;
+  border-color: #719582; }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -337,9 +362,9 @@ td:last-child {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
+/*button,*/
+/*.button {*/
+  /*margin-bottom: 1rem; }*/
 input,
 textarea,
 select,
