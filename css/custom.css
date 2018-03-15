@@ -6,11 +6,6 @@ light green #B8D671
 dark green #538383
 normal text #2a2a2a
 */
-h1, h2, h3, h4, h5, h6 {
-}
-.button {
-
-}
 .highlight {
   font-weight: bold;
   background-color: #B8D671;
@@ -32,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .buy {
   font-size: 16px;
+}
+header .buy {
+  line-height: 37px;
 }
 main .buy {
   font-size: 20px;
@@ -59,7 +57,6 @@ main .buy {
 .spread-title {
  margin: 0 0 75px 0;
 }
-
 .green-texture {
     background-image: url('../images/texture.png');
     /*background-size: cover;*/
@@ -70,9 +67,21 @@ main .buy {
     background-repeat: repeat;
 }
 .light-green-bg {
-    background-color: #B8D671;
+  background-color: #B8D671;
 }
-
+.dark-green {
+  color: #538383;
+}
+.arrow {
+  padding: 4px 50px 0 0;
+  border: 0;
+  left: -70px;
+  position: absolute;
+}
+.back {
+  top: 0;
+  position: absolute;
+}
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -104,11 +113,20 @@ main .buy {
 .heart {
 
 }
-.blood .one-third {
+.blood .meet-bob, .heart .meet-bob {
   padding-top: 40px;
+}
+.heart .cover {
+  max-width: 145%;
 }
 .skin {
 
+}
+.recommendations .column {
+  background-color: rgba(255, 255, 255, .6);
+  color: black;
+  padding: 25px;
+  border-radius: 25px;
 }
 
 /* Hero
@@ -143,10 +161,12 @@ main .buy {
 }
 .recommendation-quote {
   margin-bottom: .3rem;
+  font-weight: 400;
 }
 .recommendation-author {
   opacity: .8;
-  font-weight: 300;
+  font-weight: 7  00;
+  padding-top: 16px;
 }
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -239,9 +259,6 @@ section.about-the-author .heading h2::before, section.about-the-author .heading 
 .bobs-body {
   text-align: center;
 }
-.bobs-body .section-heading {
-  color: #538383;
-}
 
 .bobs-body .section-description {
   color: #000;
@@ -254,6 +271,59 @@ section.about-the-author .heading h2::before, section.about-the-author .heading 
 
 .italic {
   font-style: italic;
+  display: inline;
+}
+.part .header {
+  color: #538383;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.right .part {
+  text-align: left;
+}
+.left .part {
+  text-align: right;
+}
+.part .description {
+  max-width: 235px;
+}
+
+.part {
+  position: absolute;
+}
+
+.part.head {
+  top: 146px;
+  left: 136px;
+}
+.part.heart {
+  top: 300px;
+  left: 163px;
+}
+.part.right-arm {
+  top: 414px;
+  left: 115px;
+}
+.part.right-leg {
+  top: 573px;
+  left: 120px;
+}
+.part.skin {
+  top: 710px;
+  left: 116px;
+}
+.part.blood {
+  top: 264px;
+  right: 90px;
+}
+.part.left-arm {
+  top: 414px;
+  right: 118px;
+}
+.part.left-leg {
+  top: 650px;
+  right: 143px;
 }
 
 /* Bigger than 550 */
@@ -314,7 +384,7 @@ section.about-the-author .heading h2::before, section.about-the-author .heading 
     padding: 17rem 0 11.4rem;
   }
   .parts .section.heart {
-    padding: 12rem 0 11rem;
+    padding: 14rem 0;
   }
   .hero {
     padding: 16rem 0 4rem;
@@ -358,7 +428,7 @@ section.about-the-author .heading h2::before, section.about-the-author .heading 
     padding: 17rem 0 11.4rem;
   }
   .parts .section.heart {
-     padding: 9rem 0 8.9rem;
+     padding: 9rem 0 11.4rem;
    }
   .parts .section.bobs-body {
     padding: 9rem 0 8rem;
