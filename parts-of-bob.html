@@ -13,6 +13,10 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="dist/css/normalize.css">
@@ -36,8 +40,7 @@
     <div class="container">
         <a class="button arrow left" href="index.html">
             <svg width="40px" height="30px" viewBox="0 0 50 80" xml:space="preserve">
-                <polyline fill="none" stroke="#538383" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="
-                45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                <polyline fill="none" stroke="#538383" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
             </svg>
             <span class="back">Back</span>
         </a>
@@ -63,8 +66,8 @@
             </div>
         </div>
         <div class="links">
-            <a class="button button-secondary active" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
-            <a class="button button-secondary" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
+            <a class="button button-secondary bobs-parts-link active" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
+            <a class="button button-secondary get-updates" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
             <a class="button button-primary buy" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" href="">BUY</a>
         </div>
     </div>
@@ -91,10 +94,10 @@
     <section class="section head green-texture">
         <div class="container">
             <div class="row">
-                <div class="one-half column">
+                <div class="one-half column image-col">
                     <img class="cover" src="images/bob-head.png">
                 </div>
-                <div class="one-half column">
+                <div class="one-half column title-col">
                     <h1 class="meet-bob">The Head</h1>
                     <h6 class="intro-text">The entrepreneur, the idea, the product and the sale.</h6>
                 </div>
@@ -105,11 +108,11 @@
     <section class="section heart">
         <div class="container">
             <div class="row">
-                <div class="one-third column">
+                <div class="one-third column title-col">
                     <h1 class="meet-bob">The Heart</h1>
                     <h6 class="intro-text">Bank accounts and cash</h6>
                 </div>
-                <div class="two-thirds column">
+                <div class="two-thirds column image-col">
                     <img class="cover" src="images/Bob-blood2.png">
                 </div>
             </div>
@@ -119,10 +122,10 @@
     <section class="section blood light-green-bg">
         <div class="container">
             <div class="row">
-                <div class="one-half column">
+                <div class="one-half column image-col">
                     <img class="cover" src="images/bob-arm.png">
                 </div>
-                <div class="one-half column">
+                <div class="one-half column title-col">
                     <h1 class="meet-bob">Blood</h1>
                     <h6 class="intro-text">Working Capital:<br> The most important and overlooked part.</h6>
                 </div>
@@ -133,11 +136,11 @@
     <section class="section skin">
         <div class="container">
             <div class="row">
-                <div class="one-third column">
+                <div class="one-third column title-col">
                     <h1 class="meet-bob">Skin</h1>
                     <h6 class="intro-text">Accounting:<br> What holds it all together</h6>
                 </div>
-                <div class="two-thirds column">
+                <div class="two-thirds column image-col">
                     <img class="cover" src="images/bob-feet.png">
                 </div>
             </div>
@@ -151,43 +154,46 @@
                     <h3 class="section-heading dark-green">Learn business fundamentals in one helpful book.</h3>
                     <h6 class="section-description">See how all the parts work together in the <span class="italic bold">Body of Business, Principles of a Healthy Business</span>.</h6>
                     <div class=bob-body">
-                        <div class="left">
-                            <aside class="part head">
-                                <h6 class="header">The Head</h6>
-                                <p class="description">The entrepreneur, the idea, the product and the sale.</p>
-                            </aside>
-                            <aside class="part heart">
-                                <h6 class="header">Heart</h6>
-                                <p class="description">Bank accounts and cash.</p>
-                            </aside>
-                            <aside class="part right-arm">
-                                <h6 class="header">Right Arm</h6>
-                                <p class="description">Accounts Receivable (AR):<br>What customers owe you.</p>
-                            </aside>
-                            <aside class="part right-leg">
-                                <h6 class="header">Right Leg</h6>
-                                <p class="description">Your products and raw materials.</p>
-                            </aside>
-                            <aside class="part skin">
-                                <h6 class="header">Skin</h6>
-                                <p class="description">Accounting:<br>What holds all the parts together.</p>
-                            </aside>
-                        </div>
-                        <div class="right">
-                            <aside class="part blood">
-                                <h6 class="header">Blood</h6>
-                                <p class="description">Working Capital: <br> The most important and overlooked part.</p>
-                            </aside>
-                            <aside class="part left-arm">
-                                <h6 class="header">Left Arm</h6>
-                                <p class="description">Accounts Payable (AP): <br>What you owe vendors.</p>
-                            </aside>
-                            <aside class="part left-leg">
-                                <h6 class="header">Leg Leg</h6>
-                                <p class="description">Work in Progress (WIP):<br>Used only in manufacturing.</p>
-                            </aside>
-                        </div>
-                        <img src="images/bobs-body2.png">
+                        <!--<div class="bobs-body-image">-->
+                            <!--<div class="left">-->
+                                <!--<aside class="part head">-->
+                                    <!--<h6 class="header">The Head</h6>-->
+                                    <!--<p class="description">The entrepreneur, the idea, the product and the sale.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part heart">-->
+                                    <!--<h6 class="header">Heart</h6>-->
+                                    <!--<p class="description">Bank accounts and cash.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part right-arm">-->
+                                    <!--<h6 class="header">Right Arm</h6>-->
+                                    <!--<p class="description">Accounts Receivable (AR):<br>What customers owe you.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part right-leg">-->
+                                    <!--<h6 class="header">Right Leg</h6>-->
+                                    <!--<p class="description">Your products and raw materials.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part skin">-->
+                                    <!--<h6 class="header">Skin</h6>-->
+                                    <!--<p class="description">Accounting:<br>What holds all the parts together.</p>-->
+                                <!--</aside>-->
+                            <!--</div>-->
+                            <!--<div class="right">-->
+                                <!--<aside class="part blood">-->
+                                    <!--<h6 class="header">Blood</h6>-->
+                                    <!--<p class="description">Working Capital: <br> The most important and overlooked part.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part left-arm">-->
+                                    <!--<h6 class="header">Left Arm</h6>-->
+                                    <!--<p class="description">Accounts Payable (AP): <br>What you owe vendors.</p>-->
+                                <!--</aside>-->
+                                <!--<aside class="part left-leg">-->
+                                    <!--<h6 class="header">Leg Leg</h6>-->
+                                    <!--<p class="description">Work in Progress (WIP):<br>Used only in manufacturing.</p>-->
+                                <!--</aside>-->
+                            <!--</div>-->
+                            <!--<img src="images/bobs-body2.png">-->
+                        <!--</div>-->
+                        <img src="images/bobs-body-image.png" class="bobs-body-image" alt="An image of Bob's parts described as above, in its entirety.">
                     </div>
                 </div>
             </div>
@@ -213,20 +219,46 @@
 
     <section id="get-updates" class="section share">
         <div class="container">
-            <h3 class="section-heading">Sign up for the latest news on Principles</h3>
-            <h5 class="section-description">Share BOB's Principles</h5>
-            <div class="follow">
+            <h3 class="section-heading">Sign up for the latest news on Body of Business</h3>
 
-                <a class="facebook" href="https://www.facebook.com/bodyobusiness/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Author Social: Facebook', 'Clicked the Facebook Author Social Button', 'Clicked the Facebook Author Social Button']);">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="https://bob.us12.list-manage.com/subscribe/post?u=5640a81165347703bf59167c3&amp;id=9921e01efb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <label for="mce-NAME">name  <span class="asterisk">*</span>
+                            </label>
+                            <input type="text" value="" name="NAME" placeholder="name*" class="required" id="mce-NAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">email address  <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" placeholder="email address*" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5640a81165347703bf59167c3_9921e01efb" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="button sign-up bold"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+            <h5 class="section-description">Share BOB's Principles for a Healthy Business</h5>
+            <div class="follow">
+                <a id="shareBtn" class="facebook" href="https://www.facebook.com/bodyobusiness/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Author Social: Facebook', 'Clicked the Facebook Author Social Button', 'Clicked the Facebook Author Social Button']);">
                     <svg id="author-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"> <rect class="background" width="30" height="30" rx="1.66" ry="1.66"></rect> <path class="foreground" d="M20.7,30V18.38h3.9l.58-4.53H20.7V11c0-1.31.36-2.2,2.24-2.2h2.4v-4a32.08,32.08,0,0,0-3.49-.18c-3.46,0-5.82,2.11-5.82,6v3.34H12.11v4.53H16V30Z"></path> </svg>
                     <span>Facebook</span>
                 </a>
+                <!--<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Body of Business: Principles of a Healthy Business by W.R. (Bob) Seeds now available in hardcover and ebook. Visit bob.biz to learn more." data-via="bodyofbusiness" data-hashtags="HealthyBusiness,BusinessPrinciples" data-show-count="false">Tweet</a>-->
+                <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
-                <a class="twitter" href="https://twitter.com/bodyofbusiness" target="_blank" onclick="_gaq.push(['_trackEvent', 'Author Social: Twitter', 'Clicked the Twitter Author Social Button', 'Clicked the Twitter Author Social Button']);">
+                <a class="twitter" href="https://twitter.com/intent/tweet?url=www.bob.biz&text=Body%20of%20Business:%20Principles%20of%20a%20Healthy%20Business%20by%20W.R.%20(Bob)%20Seeds%20now%20available%20in%20hardcover%20and%20ebook.%20Visit%20bob.biz%20to%20learn%20more.&hashtags=HealthyBusiness,BusinessPrinciples&via=bodyofbusiness" onclick="_gaq.push(['_trackEvent', 'Author Social: Twitter', 'Clicked the Twitter Author Social Button', 'Clicked the Twitter Author Social Button']);">
                     <svg id="author-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"> <path class="background" d="M28.5,30H1.5A1.5,1.5,0,0,1,0,28.5V1.5A1.5,1.5,0,0,1,1.5,0h27A1.5,1.5,0,0,1,30,1.5v27A1.5,1.5,0,0,1,28.5,30"></path> <path class="foreground" d="M11.59,22.48A10.67,10.67,0,0,0,22.33,11.74c0-.16,0-.33,0-.49a7.68,7.68,0,0,0,1.88-2A7.53,7.53,0,0,1,22,9.89,3.79,3.79,0,0,0,23.69,7.8a7.57,7.57,0,0,1-2.4.92,3.78,3.78,0,0,0-6.43,3.44A10.72,10.72,0,0,1,7.08,8.21a3.78,3.78,0,0,0,1.17,5,3.75,3.75,0,0,1-1.71-.47v0a3.78,3.78,0,0,0,3,3.7,3.77,3.77,0,0,1-1.7.06,3.78,3.78,0,0,0,3.53,2.62A7.58,7.58,0,0,1,6.7,20.83a7.68,7.68,0,0,1-.9-.05,10.69,10.69,0,0,0,5.79,1.7"></path> </svg>
                     <span>Twitter</span>
                 </a>
-
                 <a class="linkedin" href="https://www.linkedin.com/company/bodyofbusiness" target="_blank" onclick="_gaq.push(['_trackEvent', 'Author Social: LinkedIn', 'Clicked the LinkedIn Author Social Button', 'Clicked the LinkedIn Author Social Button']);">
                     <svg id="author-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"> <path class="background" d="M27.78,0H2.21A2.19,2.19,0,0,0,0,2.16V27.84A2.19,2.19,0,0,0,2.21,30H27.78A2.19,2.19,0,0,0,30,27.84V2.16A2.19,2.19,0,0,0,27.78,0Z"></path> <path class="foreground" d="M4.45,11.25H8.9V25.56H4.45ZM6.67,4.13A2.58,2.58,0,1,1,4.09,6.71,2.58,2.58,0,0,1,6.67,4.13"></path> <path class="foreground" d="M11.69,11.25H16v2H16a4.68,4.68,0,0,1,4.21-2.31c4.5,0,5.33,3,5.33,6.82v7.85H21.12v-7c0-1.66,0-3.8-2.31-3.8s-2.67,1.81-2.67,3.67v7.08H11.69Z"></path> </svg>
                     <span>LinkedIn</span>
@@ -239,19 +271,19 @@
 <footer class="section beige-texture">
     <div class="container">
         <div class="row">
-            <div class="four columns left">
-                <h6 class="bold">&copy; Body of Business</h6>
+            <div class="four columns left copyright">
+                <h6 class="bold">&copy;2018 Body of Business</h6>
             </div>
             <div class="one columns">
                 <p>
                 </p>
             </div>
-            <div class="seven columns right">
+            <div class="seven columns right footer-links">
                 <h6>
                     <a href="terms-of-use.html">Terms of Use</a> |
                     <a href="privacy-policy.html">Privacy Policy</a> |
-                    <a href="cookie-notice.html">Cookies Notice</a> |
-                    <a href="contact-us.html">Contact Us</a>
+                    <!--<a href="cookie-notice.html">Cookies Notice</a> |-->
+                    <a href="mailto:info@bob.biz">Contact Us</a>
                 </h6>
             </div>
             <!--<div class="row center">-->
@@ -265,7 +297,9 @@
     </div>
 </footer>
 
-<script type="application/javascript" src="js/dynamic_header.js"></script>
+<!--<script type="application/javascript" src="js/dynamic_header.js"></script>-->
+<script type="application/javascript" src="js/mc.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <!-- End Document
