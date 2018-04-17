@@ -7,10 +7,20 @@
     <meta charset="utf-8">
     <title>BOB - Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds</title>
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content=""><meta charset="utf-8">
+    <title>BOB - Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds</title>
+    <meta property="og:url"           content="https://bob.biz" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds" />
+    <meta property="og:description"   content="Body of Business, Principles of a Healthy Business carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success." />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+    <meta name="description" content="Body of Business, Principles of a Healthy Business carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success.">
+    <meta name="author" content="W.R. (Bob) Seeds">
 
     <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FONT
@@ -21,7 +31,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css?v=2">
 
     <!-- Scripts
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,15 +46,22 @@
 </head>
 <body>
 
-<header class="show">
+<header>
     <div class="container">
-        <a class="button arrow left" href="index.html">
+        <a class="button arrow left" href="/">
             <svg width="40px" height="30px" viewBox="0 0 50 80" xml:space="preserve">
                 <polyline fill="none" stroke="#538383" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
             </svg>
             <span class="back">Back</span>
         </a>
-        <div class="logo"><a class="root" href="index.html"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+        <div class="logo"><a class="root" href="/"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+
+        <div class="links">
+            <a class="link button-secondary bobs-parts-link active" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
+            <a class="link button-secondary get-updates" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
+            <a class="button button-primary buy" href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" >Buy</a>
+        </div>
+
         <div class="navigation">
             <div class="follow">
 
@@ -65,11 +82,7 @@
 
             </div>
         </div>
-        <div class="links">
-            <a class="button button-secondary bobs-parts-link active" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
-            <a class="button button-secondary get-updates" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
-            <a class="button button-primary buy" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" href="">BUY</a>
-        </div>
+
     </div>
 </header>
 
@@ -79,12 +92,12 @@
     <section class="section hero parts-cover">
         <div class="container">
             <div class="row">
-                <div class="seven columns">
+                <div class="one-half column parts-intro">
                     <h2 class="meet-bob">The <div class="italic">Body Of Business</div> Parts</h2>
                     <h6 class="intro-text">Let BOB teach you the fundamental parts of business and how to keep yours healthy enough to grow.</h6>
-                    <a class="button button-primary buy" href="">BUY</a>
+                    <a class="button button-primary buy" href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])">Buy</a>
                 </div>
-                <div class="one-third column">
+                <div class="one-half column">
                     <img class="cover-parts" src="images/bobs-parts.png">
                 </div>
             </div>
@@ -105,11 +118,11 @@
         </div>
     </section>
 
-    <section class="section heart">
+    <section class="section heart scroll-check">
         <div class="container">
             <div class="row">
                 <div class="one-third column title-col">
-                    <h1 class="meet-bob">The Heart</h1>
+                    <h1 class="meet-bob">Heart</h1>
                     <h6 class="intro-text">Bank accounts and cash</h6>
                 </div>
                 <div class="two-thirds column image-col">
@@ -152,7 +165,7 @@
             <div class="row">
                 <div class="twelve columns">
                     <h3 class="section-heading dark-green">Learn business fundamentals in one helpful book.</h3>
-                    <h6 class="section-description">See how all the parts work together in the <span class="italic bold">Body of Business, Principles of a Healthy Business</span>.</h6>
+                    <h6 class="section-description">See how all the parts work together in the <span class="italic">Body of Business, Principles of a Healthy Business</span>.</h6>
                     <div class=bob-body">
                         <!--<div class="bobs-body-image">-->
                             <!--<div class="left">-->
@@ -207,8 +220,8 @@
             </div>
             <div class="row">
                 <div class="one-third column">
-                    <h6 class="intro-text">If you’re looking for a step-by-step guide on how to learn more about your business and keep it on the right track, this book is perfect for you. Get your copy of <span class="italic bold">Body of Business, Principles of a Healthy Business</span> today.</h6>
-                    <a class="button button-primary buy" href="">BUY</a>
+                    <h6 class="intro-text">If you’re looking for a step-by-step guide on how to learn more about your business and keep it on the right track, this book is perfect for you. Get your copy of <span class="italic">Body of Business, Principles of a Healthy Business</span> today.</h6>
+                    <a class="button button-primary buy" href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" >Buy</a>
                 </div>
                 <div class="two-thirds column covers">
                     <img class="cover" src="images/bob-spread.png">
@@ -297,11 +310,19 @@
     </div>
 </footer>
 
-<!--<script type="application/javascript" src="js/dynamic_header.js"></script>-->
+<script type="application/javascript" src="js/dynamic_header.js"></script>
 <script type="application/javascript" src="js/mc.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-114085511-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-114085511-1');
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

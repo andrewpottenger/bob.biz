@@ -4,17 +4,15 @@
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>BOB - Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds</title>
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta charset="utf-8">
+    <title>BOB - Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds</title>
     <meta property="og:url"           content="https://bob.biz" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Body Of Business, Principles of a Healthy Business, by W.R. (Bob) Seeds" />
     <meta property="og:description"   content="Body of Business, Principles of a Healthy Business carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success." />
     <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-  <meta name="description" content="Body of Business, Principles of a Healthy Business carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success.">
-  <meta name="author" content="W.R. (Bob) Seeds">
+    <meta name="description" content="Body of Business, Principles of a Healthy Business carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success.">
+    <meta name="author" content="W.R. (Bob) Seeds">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,7 +26,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="dist/css/normalize.css">
   <link rel="stylesheet" href="dist/css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/custom.css?v=2">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,9 +41,14 @@
 </head>
 <body>
 
-<header class="show">
+<header>
   <div class="container">
-    <div class="logo"><a class="root" href="index.html"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+    <div class="logo"><a class="root" href="/"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+    <div class="links">
+      <a class="link bobs-parts-link" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
+      <a class="link get-updates" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
+      <a class="button button-primary buy" href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" >Buy</a>
+    </div>
     <div class="navigation">
       <div class="follow">
 
@@ -66,11 +69,6 @@
 
       </div>
     </div>
-    <div class="links">
-      <a class="button button-secondary bobs-parts-link" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
-      <a class="button button-secondary get-updates" onclick="_gaq.push(['_trackEvent', 'Get Updates Header Button', 'Clicked Header Get Updates Button'])" href="#get-updates">Get Updates</a>
-      <a class="button button-primary buy" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" href="">BUY</a>
-    </div>
   </div>
 </header>
 
@@ -83,7 +81,7 @@
         <div class="five columns">
           <h1 class="meet-bob">Meet BOB</h1>
           <h6 class="intro-text">Bob is your biggest advocate. He’s committed to providing entrepreneurs like you with the information and insights you need to build and maintain a healthy company. <span class="bold">Body of Business, Principles of a Healthy Business</span> carefully guides you through the fundamentals of business, and carves out a clear-cut path towards success.</h6>
-          <a class="button button-primary buy" href="">BUY</a>
+          <a class="button button-primary buy"  href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank">Buy</a>
         </div>
         <div class="seven columns covers">
           <img class="cover" src="images/hero-image-book.png">
@@ -102,16 +100,21 @@
     </div>
   </section>
 
-  <section class="section video light-green-bg">
+  <section class="section video lightest-green-bg scroll-check">
     <div class="container">
-      <div class="row">
-        <div class="five columns">
+      <div class="row play-action">
+        <div class="five columns play-video">
           <img class="cover" src="images/video-placeholder.png">
         </div>
-        <div class="seven columns">
+        <div class="seven columns play-video">
           <h1 class="meet-bob">What's BOB all about?</h1>
           <h6 class="intro-text">Watch the video to learn about BOB and how his straightforward approach to business can help you improve your company.</h6>
-          <a class="button button-primary buy" href="">WATCH</a>
+          <button class="button button-primary buy">WATCH</button>
+        </div>
+      </div>
+      <div class="row video-player">
+        <div class="twelve columns">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c63T8vU5phU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -149,7 +152,7 @@
     </div>
   </section>
 
-  <section class="section about-the-author">
+  <section class="section about-the-author beige-texture">
     <div class="container">
       <div class="row heading">
         <h2>About The Author</h2>
@@ -173,8 +176,8 @@
       </div>
       <div class="row">
         <div class="one-third column">
-          <h6 class="intro-text">If you’re looking for a step-by-step guide on how to learn more about your business and keep it on the right track, this book is perfect for you. Get your copy of <span class="bold">Body of Business, Principles of a Healthy Business</span> today.</h6>
-          <a class="button button-primary buy" href="">BUY</a>
+          <h6 class="intro-text">If you’re looking for a step-by-step guide on how to learn more about your business and keep it on the right track, this book is perfect for you. Get your copy of <span class="italic">Body of Business, Principles of a Healthy Business</span> today.</h6>
+          <a class="button button-primary buy"  href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank">Buy</a>
         </div>
         <div class="two-thirds column covers">
           <img class="cover" src="images/bob-spread.png">
@@ -265,23 +268,37 @@
   </div>
 </footer>
 
-<script>
-    document.getElementById('shareBtn').onclick = function() {
-        FB.ui({
-            method: 'feed',
-            link: 'http://bob.biz',
+<!--<script>-->
+    <!--document.getElementById('shareBtn').onclick = function() {-->
+        <!--FB.ui({-->
+            <!--method: 'feed',-->
+            <!--link: 'http://bob.biz',-->
 
-            caption: 'Buy the book',
-        }, function(response){});
-    }
-</script>
+            <!--caption: 'Buy the book',-->
+        <!--}, function(response){});-->
+    <!--}-->
+<!--</script>-->
 
-<!--<script type="application/javascript" src="js/dynamic_header.js"></script>-->
+<script type="application/javascript" src="js/dynamic_header.js"></script>
 <script type="application/javascript" src="js/mc.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-114085511-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-
+    gtag('config', 'UA-114085511-1');
+</script>
+<script>
+    $( document ).ready(function() {
+        $(".play-video").click(function () {
+            $(".video").addClass('play');
+        });
+    });
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

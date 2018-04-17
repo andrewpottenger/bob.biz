@@ -34,13 +34,17 @@
 <body>
 <header class="show">
     <div class="container">
-        <a class="button arrow left" href="index.html">
+        <a class="button arrow left" href="/">
             <svg width="40px" height="30px" viewBox="0 0 50 80" xml:space="preserve">
                 <polyline fill="none" stroke="#538383" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
             </svg>
             <span class="back">Back</span>
         </a>
-        <div class="logo"><a class="root" href="index.html"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+        <div class="logo"><a class="root" href="/"><img src="images/logo2.png" class="logo" alt="BOB Body of Business Logo" /><span class="logo-text">Body of Business</span></a></div>
+        <div class="links">
+            <a class="link bobs-parts-link" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
+            <a class="button button-primary buy" href="https://www.amazon.com/gp/product/0999335901/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=bodyofbusines-20&creative=9325&linkCode=as2&creativeASIN=0999335901&linkId=4c06386f3302325c362981381395f902" target="_blank" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" >Buy</a>
+        </div>
         <div class="navigation">
             <div class="follow">
 
@@ -58,12 +62,7 @@
                     <svg id="author-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"> <path class="background" d="M27.78,0H2.21A2.19,2.19,0,0,0,0,2.16V27.84A2.19,2.19,0,0,0,2.21,30H27.78A2.19,2.19,0,0,0,30,27.84V2.16A2.19,2.19,0,0,0,27.78,0Z"></path> <path class="foreground" d="M4.45,11.25H8.9V25.56H4.45ZM6.67,4.13A2.58,2.58,0,1,1,4.09,6.71,2.58,2.58,0,0,1,6.67,4.13"></path> <path class="foreground" d="M11.69,11.25H16v2H16a4.68,4.68,0,0,1,4.21-2.31c4.5,0,5.33,3,5.33,6.82v7.85H21.12v-7c0-1.66,0-3.8-2.31-3.8s-2.67,1.81-2.67,3.67v7.08H11.69Z"></path> </svg>
                     <span>LinkedIn</span>
                 </a>
-
             </div>
-        </div>
-        <div class="links">
-            <a class="button button-secondary bobs-parts-link" onclick="_gaq.push(['_trackEvent', 'Bobs Parts Header Button', 'Clicked Header Bobs Parts Button'])" href="parts-of-bob.html">Bob's Parts</a>
-            <a class="button button-primary buy" onclick="_gaq.push(['_trackEvent', 'Buy Header Button', 'Clicked Header Buy Button'])" href="">BUY</a>
         </div>
     </div>
 </header>
