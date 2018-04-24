@@ -198,7 +198,7 @@ sup {
   color: #555;
   text-align: center
 }
-.link:hover, .link:focus, .link:visited {
+.link:hover, .link:focus, .link:visited, .active {
   text-decoration: underline;
 }
 .link+.link {
