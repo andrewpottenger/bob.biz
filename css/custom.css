@@ -569,6 +569,11 @@ section.about-the-author .heading h2::before, section.about-the-author .heading 
   max-width: 695px;
 }
 
+.requests {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
 .terms h1 {
   padding: 50px 0 0 0;
 }
